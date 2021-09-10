@@ -68,7 +68,7 @@ const HomeSidebar = observer((props: Props) => {
         <GenericSidebarBase mobilePadding>
             <ConnectionStatus />
             <GenericSidebarList>
-                <ConditionalLink active={pathname === "/"} to="/">
+                <ConditionalLink active={pathname === "/"} to="./">
                     <ButtonItem active={pathname === "/"}>
                         <Home size={20} />
                         <span>
@@ -80,7 +80,7 @@ const HomeSidebar = observer((props: Props) => {
                     <>
                         <ConditionalLink
                             active={pathname === "/friends"}
-                            to="/friends">
+                            to="./friends">
                             <ButtonItem
                                 active={pathname === "/friends"}
                                 alert={
@@ -102,7 +102,7 @@ const HomeSidebar = observer((props: Props) => {
                 )}
                 <ConditionalLink
                     active={obj?.channel_type === "SavedMessages"}
-                    to="/open/saved">
+                    to="./open/saved">
                     <ButtonItem active={obj?.channel_type === "SavedMessages"}>
                         <Notepad size={20} />
                         <span>

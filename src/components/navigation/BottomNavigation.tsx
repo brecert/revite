@@ -86,28 +86,28 @@ export const BottomNavigation = observer(({ lastOpened }: Props) => {
                     </IconButton>
                 </Button>
                 <Button active={friendsActive}>
-                    <ConditionalLink active={friendsActive} to="/friends">
+                    <ConditionalLink active={friendsActive} to="./friends">
                         <IconButton>
                             <Group size={25} />
                         </IconButton>
                     </ConditionalLink>
                 </Button>
                 {/*<Button active={searchActive}>
-                    <ConditionalLink active={searchActive} to="/search">
+                    <ConditionalLink active={searchActive} to="./search">
                         <IconButton>
                             <Search size={25} />
                         </IconButton>
                     </ConditionalLink>
                 </Button>
                 <Button active={inboxActive}>
-                    <ConditionalLink active={inboxActive} to="/inbox">
+                    <ConditionalLink active={inboxActive} to="./inbox">
                         <IconButton>
                             <Inbox size={25} />
                         </IconButton>
                     </ConditionalLink>
                 </Button>*/}
                 <Button active={settingsActive}>
-                    <ConditionalLink active={settingsActive} to="/settings">
+                    <ConditionalLink active={settingsActive} to="./settings">
                         <IconButton>
                             <UserIcon target={user} size={26} status={true} />
                         </IconButton>

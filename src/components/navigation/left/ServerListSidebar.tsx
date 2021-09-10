@@ -130,8 +130,8 @@ const ServerEntry = styled.div<{ active: boolean; home?: boolean }>`
         }
 
         ${(props) =>
-            props.active &&
-            css`
+        props.active &&
+        css`
                 &:active {
                     transform: none;
                 }
@@ -143,8 +143,8 @@ const ServerEntry = styled.div<{ active: boolean; home?: boolean }>`
         display: relative;
 
         ${(props) =>
-            !props.active &&
-            css`
+        !props.active &&
+        css`
                 display: none;
             `}
 
@@ -301,8 +301,8 @@ export const ServerListSidebar = observer(({ unreads, lastOpened }: Props) => {
                         <ConditionalLink
                             key={entry.server._id}
                             active={active}
-                            to={`/server/${entry.server._id}${id ? `/channel/${id}` : ""
-                                }`}>
+                            to={`./server/${entry.server._id}${id ? `/channel/${id}` : ""}`}
+                        >
                             <ServerEntry
                                 active={active}
                                 onContextMenu={attachContextMenu("Menu", {

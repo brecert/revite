@@ -104,7 +104,7 @@ const ServerSidebar = observer((props: Props) => {
                 }}
                 key={entry._id}
                 active={active}
-                to={`/server/${server!._id}/channel/${entry._id}`}>
+                to={`./server/${server!._id}/channel/${entry._id}`}>
                 <ChannelButton
                     channel={entry}
                     active={active}
