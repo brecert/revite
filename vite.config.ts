@@ -59,30 +59,30 @@ export default defineConfig({
                     ? "Early preview builds of Revolt."
                     : "User-first, privacy-focused chat platform.",
                 categories: ["messaging"],
-                start_url: "/",
+                start_url: "./",
                 orientation: "portrait",
                 display: "standalone",
                 background_color: "#101823",
                 theme_color: "#101823",
                 icons: [
                     {
-                        src: `/assets/icons/${iconPrefix}android-chrome-192x192.png`,
+                        src: `./assets/icons/${iconPrefix}android-chrome-192x192.png`,
                         type: "image/png",
                         sizes: "192x192",
                     },
                     {
-                        src: `/assets/icons/${iconPrefix}android-chrome-512x512.png`,
+                        src: `./assets/icons/${iconPrefix}android-chrome-512x512.png`,
                         type: "image/png",
                         sizes: "512x512",
                     },
                     {
-                        src: `/assets/icons/monochrome.svg`,
+                        src: `./assets/icons/monochrome.svg`,
                         type: "image/svg+xml",
                         sizes: "48x48 72x72 96x96 128x128 256x256",
                         purpose: "monochrome",
                     },
                     {
-                        src: `/assets/icons/masking-512x512.png`,
+                        src: `./assets/icons/masking-512x512.png`,
                         type: "image/png",
                         sizes: "512x512",
                         purpose: "maskable",
