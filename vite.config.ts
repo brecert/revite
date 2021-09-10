@@ -45,6 +45,7 @@ const isNightly = false; //branch !== 'production';
 const iconPrefix = isNightly ? "nightly-" : "";
 
 export default defineConfig({
+    base: './',
     plugins: [
         preact(),
         VitePWA({
