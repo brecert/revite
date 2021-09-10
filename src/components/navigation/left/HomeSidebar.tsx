@@ -49,7 +49,7 @@ const HomeSidebar = observer((props: Props) => {
         .map((x) => mapChannelWithUnread(x, props.unreads));
 
     const obj = client.channels.get(channel);
-    if (channel && !obj) return <Redirect to="/" />;
+    if (channel && !obj) return <Redirect to="./" />;
     if (obj) useUnreads({ ...props, channel: obj });
 
     useEffect(() => {

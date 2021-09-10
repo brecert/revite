@@ -60,13 +60,13 @@ const ServerSidebar = observer((props: Props) => {
         useParams<{ server: string; channel?: string }>();
 
     const server = client.servers.get(server_id);
-    if (!server) return <Redirect to="/" />;
+    if (!server) return <Redirect to="./" />;
 
     const channel = channel_id ? client.channels.get(channel_id) : undefined;
 
     // The user selected no channel, let's see if there's a channel available
-    if (!channel && server.channel_ids.length > 0) return <Redirect to={`/server/${server_id}/channel/${server.channel_ids[0]}`} />;
-    if (channel_id && !channel) return <Redirect to={`/server/${server_id}`} />;
+    if (!channel && server.channel_ids.length > 0) return <Redirect to={`./server/${server_id}/channel/${server.channel_ids[0]}`} />;
+    if (channel_id && !channel) return <Redirect to={`./server/${server_id}`} />;
 
     if (channel) useUnreads({ ...props, channel });
 

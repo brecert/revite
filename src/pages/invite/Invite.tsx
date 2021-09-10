@@ -49,7 +49,7 @@ export default function Invite() {
         }
     }, [client, code, invite, status]);
 
-    if (code === undefined) return <Redirect to="/" />;
+    if (code === undefined) return <Redirect to="./" />;
 
     if (typeof invite === "undefined") {
         return (
