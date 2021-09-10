@@ -46,19 +46,19 @@ export default function Login() {
                     </div>
                     <div className={styles.modal}>
                         <Switch>
-                            <Route path="/login/create">
+                            <Route path="./login/create">
                                 <FormCreate />
                             </Route>
-                            <Route path="/login/resend">
+                            <Route path="./login/resend">
                                 <FormResend />
                             </Route>
-                            <Route path="/login/reset/:token">
+                            <Route path="./login/reset/:token">
                                 <FormReset />
                             </Route>
-                            <Route path="/login/reset">
+                            <Route path="./login/reset">
                                 <FormSendReset />
                             </Route>
-                            <Route path="/">
+                            <Route path="./">
                                 <FormLogin />
                             </Route>
                         </Switch>

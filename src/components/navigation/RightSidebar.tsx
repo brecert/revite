@@ -32,8 +32,8 @@ export default function RightSidebar() {
     return (
         <SidebarBase>
             <Switch>
-                <Route path="/server/:server/channel/:channel">{content}</Route>
-                <Route path="/channel/:channel">{content}</Route>
+                <Route path="./server/:server/channel/:channel">{content}</Route>
+                <Route path="./channel/:channel">{content}</Route>
             </Switch>
         </SidebarBase>
     );

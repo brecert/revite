@@ -79,25 +79,25 @@ export default observer(() => {
             ]}
             children={
                 <Switch>
-                    <Route path="/server/:server/settings/categories">
+                    <Route path="./server/:server/settings/categories">
                         <Categories server={server} />
                     </Route>
-                    <Route path="/server/:server/settings/members">
+                    <Route path="./server/:server/settings/members">
                         <RequiresOnline>
                             <Members server={server} />
                         </RequiresOnline>
                     </Route>
-                    <Route path="/server/:server/settings/invites">
+                    <Route path="./server/:server/settings/invites">
                         <RequiresOnline>
                             <Invites server={server} />
                         </RequiresOnline>
                     </Route>
-                    <Route path="/server/:server/settings/bans">
+                    <Route path="./server/:server/settings/bans">
                         <RequiresOnline>
                             <Bans server={server} />
                         </RequiresOnline>
                     </Route>
-                    <Route path="/server/:server/settings/roles">
+                    <Route path="./server/:server/settings/roles">
                         <RequiresOnline>
                             <Roles server={server} />
                         </RequiresOnline>

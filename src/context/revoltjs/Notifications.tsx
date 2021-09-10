@@ -303,13 +303,13 @@ const NotifierComponent = connectState(
 export default function NotificationsComponent() {
     return (
         <Switch>
-            <Route path="/server/:server/channel/:channel">
+            <Route path="./server/:server/channel/:channel">
                 <NotifierComponent />
             </Route>
-            <Route path="/channel/:channel">
+            <Route path="./channel/:channel">
                 <NotifierComponent />
             </Route>
-            <Route path="/">
+            <Route path="./">
                 <NotifierComponent />
             </Route>
         </Switch>
