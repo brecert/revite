@@ -65,7 +65,7 @@ export default function Home() {
                 <img src={wideSVG} />
             </h3>
             <div className={styles.actions}>
-                <Link to="/invite/Testers">
+                <Link to="./invite/Testers">
                     <CategoryButton
                         action="chevron"
                         icon={<Emoji emoji="😁" size={32} />}>
@@ -82,7 +82,7 @@ export default function Home() {
                         Donate to Revolt
                     </CategoryButton>
                 </a>
-                <Link to="/settings/feedback">
+                <Link to="./settings/feedback">
                     <CategoryButton
                         action="chevron"
                         icon={<Emoji emoji="🎉" size={32} />}>
@@ -90,7 +90,7 @@ export default function Home() {
                     </CategoryButton>
                 </Link>
                 <Tooltip content="You can also right-click the user icon in the top left, or left click it if you're already home.">
-                    <Link to="/settings">
+                    <Link to="./settings">
                         <CategoryButton
                             action="chevron"
                             icon={<Emoji emoji="🔧" size={32} />}>

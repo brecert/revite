@@ -301,9 +301,8 @@ export const ServerListSidebar = observer(({ unreads, lastOpened }: Props) => {
                         <ConditionalLink
                             key={entry.server._id}
                             active={active}
-                            to={`/server/${entry.server._id}${
-                                id ? `/channel/${id}` : ""
-                            }`}>
+                            to={`/server/${entry.server._id}${id ? `/channel/${id}` : ""
+                                }`}>
                             <ServerEntry
                                 active={active}
                                 onContextMenu={attachContextMenu("Menu", {
@@ -341,7 +340,7 @@ export const ServerListSidebar = observer(({ unreads, lastOpened }: Props) => {
             </ServerList>
             {!isTouchscreenDevice && (
                 <SettingsButton>
-                    <Link to="/settings">
+                    <Link to="./settings">
                         <Tooltip
                             content={<Text id="app.settings.title" />}
                             placement="right">

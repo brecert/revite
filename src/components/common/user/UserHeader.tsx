@@ -71,7 +71,7 @@ export default observer(({ user }: Props) => {
             </HeaderBase>
             {!isTouchscreenDevice && (
                 <div className="actions">
-                    <Link to="/settings">
+                    <Link to="./settings">
                         <IconButton>
                             <Cog size={24} />
                         </IconButton>

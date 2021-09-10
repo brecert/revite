@@ -111,7 +111,7 @@ const HomeSidebar = observer((props: Props) => {
                     </ButtonItem>
                 </ConditionalLink>
                 {import.meta.env.DEV && (
-                    <Link to="/dev">
+                    <Link to="./dev">
                         <ButtonItem active={pathname === "/dev"}>
                             <Wrench size={20} />
                             <span>

@@ -434,7 +434,7 @@ export const UserProfile = observer(
                                 mutualGroups.map(
                                     (x) =>
                                         x?.channel_type === "Group" && (
-                                            <Link to={`/channel/${x._id}`}>
+                                            <Link to={`./channel/${x._id}`}>
                                                 <div
                                                     className={styles.entry}
                                                     key={x._id}>
@@ -460,7 +460,7 @@ export const UserProfile = observer(
                                 mutualServers.map(
                                     (x) =>
                                         x && (
-                                            <Link to={`/server/${x._id}`}>
+                                            <Link to={`./server/${x._id}`}>
                                                 <div
                                                     className={styles.entry}
                                                     key={x._id}>

@@ -52,7 +52,7 @@ export function Feedback() {
                     <Text id="app.settings.pages.feedback.bug" />
                 </CategoryButton>
             </a>
-            <Link to="/invite/Testers">
+            <Link to="./invite/Testers">
                 <a target="_blank" rel="noreferrer">
                     <CategoryButton
                         hover

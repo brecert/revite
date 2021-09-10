@@ -131,7 +131,7 @@ export function Form({ page, callback }: Props) {
                     </>
                 )}
                 <span className={styles.footer}>
-                    <Link to="/login">
+                    <Link to="./login">
                         <a>
                             <Text id="login.remembered" />
                         </a>
@@ -192,12 +192,12 @@ export function Form({ page, callback }: Props) {
                             page === "create"
                                 ? "login.register"
                                 : page === "login"
-                                ? "login.title"
-                                : page === "reset"
-                                ? "login.set_password"
-                                : page === "resend"
-                                ? "login.resend"
-                                : "login.reset"
+                                    ? "login.title"
+                                    : page === "reset"
+                                        ? "login.set_password"
+                                        : page === "resend"
+                                            ? "login.resend"
+                                            : "login.reset"
                         }
                     />
                 </Button>
@@ -206,13 +206,13 @@ export function Form({ page, callback }: Props) {
                 <>
                     <span className={styles.create}>
                         <Text id="login.existing" />
-                        <Link to="/login">
+                        <Link to="./login">
                             <Text id="login.title" />
                         </Link>
                     </span>
                     <span className={styles.create}>
                         <Text id="login.missing_verification" />
-                        <Link to="/login/resend">
+                        <Link to="./login/resend">
                             <Text id="login.resend" />
                         </Link>
                     </span>
@@ -222,13 +222,13 @@ export function Form({ page, callback }: Props) {
                 <>
                     <span className={styles.create}>
                         <Text id="login.new" />
-                        <Link to="/login/create">
+                        <Link to="./login/create">
                             <Text id="login.create" />
                         </Link>
                     </span>
                     <span className={styles.create}>
                         <Text id="login.forgot" />
-                        <Link to="/login/reset">
+                        <Link to="./login/reset">
                             <Text id="login.reset" />
                         </Link>
                     </span>
@@ -237,14 +237,14 @@ export function Form({ page, callback }: Props) {
             {(page === "reset" ||
                 page === "resend" ||
                 page === "send_reset") && (
-                <>
-                    <span className={styles.create}>
-                        <Link to="/login">
-                            <Text id="login.remembered" />
-                        </Link>
-                    </span>
-                </>
-            )}
+                    <>
+                        <span className={styles.create}>
+                            <Link to="./login">
+                                <Text id="login.remembered" />
+                            </Link>
+                        </span>
+                    </>
+                )}
             <Legal />
         </div>
     );

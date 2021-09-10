@@ -54,7 +54,7 @@ export default observer(({ server }: Props) => {
             <ServerName>{server.name}</ServerName>
             {(server.permission & ServerPermission.ManageServer) > 0 && (
                 <div className="actions">
-                    <Link to={`/server/${server._id}/settings`}>
+                    <Link to={`./server/${server._id}/settings`}>
                         <IconButton>
                             <Cog size={24} />
                         </IconButton>
