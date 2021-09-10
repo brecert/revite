@@ -147,45 +147,45 @@ export default function Settings() {
             ]}
             children={
                 <Switch>
-                    <Route path="./settings/profile">
+                    <Route path="/settings/profile">
                         <Profile />
                     </Route>
-                    <Route path="./settings/sessions">
+                    <Route path="/settings/sessions">
                         <RequiresOnline>
                             <Sessions />
                         </RequiresOnline>
                     </Route>
-                    <Route path="./settings/appearance">
+                    <Route path="/settings/appearance">
                         <Appearance />
                     </Route>
-                    <Route path="./settings/audio">
+                    <Route path="/settings/audio">
                         <Audio />
                     </Route>
-                    <Route path="./settings/notifications">
+                    <Route path="/settings/notifications">
                         <Notifications />
                     </Route>
-                    <Route path="./settings/language">
+                    <Route path="/settings/language">
                         <Languages />
                     </Route>
-                    <Route path="./settings/sync">
+                    <Route path="/settings/sync">
                         <Sync />
                     </Route>
-                    <Route path="./settings/native">
+                    <Route path="/settings/native">
                         <Native />
                     </Route>
-                    <Route path="./settings/experiments">
+                    <Route path="/settings/experiments">
                         <ExperimentsPage />
                     </Route>
-                    <Route path="./settings/bots">
+                    <Route path="/settings/bots">
                         <MyBots />
                     </Route>
-                    {isExperimentEnabled('theme_shop') && <Route path="./settings/theme_shop">
+                    {isExperimentEnabled('theme_shop') && <Route path="/settings/theme_shop">
                         <ThemeShop />
                     </Route>}
-                    <Route path="./settings/feedback">
+                    <Route path="/settings/feedback">
                         <Feedback />
                     </Route>
-                    <Route path="./">
+                    <Route path="/">
                         <Account />
                     </Route>
                 </Switch>

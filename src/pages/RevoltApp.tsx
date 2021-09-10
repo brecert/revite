@@ -111,18 +111,18 @@ export default function App() {
                             path="/server/:server/channel/:channel"
                             component={Channel}
                         />
-                        <Route path="./server/:server" />
-                        <Route path="./channel/:channel" component={Channel} />
+                        <Route path="/server/:server" />
+                        <Route path="/channel/:channel" component={Channel} />
 
-                        <Route path="./settings/:page" component={Settings} />
-                        <Route path="./settings" component={Settings} />
+                        <Route path="/settings/:page" component={Settings} />
+                        <Route path="/settings" component={Settings} />
 
-                        <Route path="./dev" component={Developer} />
-                        <Route path="./friends" component={Friends} />
-                        <Route path="./open/:id" component={Open} />
-                        <Route path="./bot/:id" component={InviteBot} />
-                        <Route path="./invite/:code?" component={Invite} />
-                        <Route path="./" component={Home} />
+                        <Route path="/dev" component={Developer} />
+                        <Route path="/friends" component={Friends} />
+                        <Route path="/open/:id" component={Open} />
+                        <Route path="/bot/:id" component={InviteBot} />
+                        <Route path="/invite/:code?" component={Invite} />
+                        <Route path="/" component={Home} />
                     </Switch>
                 </Routes>
                 <ContextMenus />

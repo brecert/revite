@@ -109,10 +109,9 @@ function Notifier({ options, notifs }: Props) {
                         {
                             const user = users.get(msg.content.id);
                             body = translate(
-                                `app.main.channel.system.${
-                                    msg.content.type === "user_added"
-                                        ? "added_by"
-                                        : "removed_by"
+                                `app.main.channel.system.${msg.content.type === "user_added"
+                                    ? "added_by"
+                                    : "removed_by"
                                 }`,
                                 {
                                     user: user?.username,
@@ -303,13 +302,13 @@ const NotifierComponent = connectState(
 export default function NotificationsComponent() {
     return (
         <Switch>
-            <Route path="./server/:server/channel/:channel">
+            <Route path="/server/:server/channel/:channel">
                 <NotifierComponent />
             </Route>
-            <Route path="./channel/:channel">
+            <Route path="/channel/:channel">
                 <NotifierComponent />
             </Route>
-            <Route path="./">
+            <Route path="/">
                 <NotifierComponent />
             </Route>
         </Switch>

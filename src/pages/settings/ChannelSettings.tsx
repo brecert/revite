@@ -70,10 +70,10 @@ export default function ChannelSettings() {
             ]}
             children={
                 <Switch>
-                    <Route path="./server/:server/channel/:channel/settings/permissions">
+                    <Route path="/server/:server/channel/:channel/settings/permissions">
                         <Permissions channel={channel} />
                     </Route>
-                    <Route path="./channel/:channel/settings/permissions">
+                    <Route path="/channel/:channel/settings/permissions">
                         <Permissions channel={channel} />
                     </Route>
 

@@ -13,20 +13,20 @@ export default function LeftSidebar() {
     return (
         <SidebarBase>
             <Switch>
-                <Route path="./settings" />
-                <Route path="./server/:server/channel/:channel">
+                <Route path="/settings" />
+                <Route path="/server/:server/channel/:channel">
                     <ServerListSidebar />
                     {isOpen && <ServerSidebar />}
                 </Route>
-                <Route path="./server/:server">
+                <Route path="/server/:server">
                     <ServerListSidebar />
                     {isOpen && <ServerSidebar />}
                 </Route>
-                <Route path="./channel/:channel">
+                <Route path="/channel/:channel">
                     <ServerListSidebar />
                     {isOpen && <HomeSidebar />}
                 </Route>
-                <Route path="./">
+                <Route path="/">
                     <ServerListSidebar />
                     {isOpen && <HomeSidebar />}
                 </Route>

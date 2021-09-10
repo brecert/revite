@@ -19,12 +19,12 @@ export function App() {
             // @ts-expect-error typings mis-match between preact... and preact? */}
             <Suspense fallback={<Preloader type="spinner" />}>
                 <Switch>
-                    <Route path="./login">
+                    <Route path="/login">
                         <CheckAuth>
                             <Login />
                         </CheckAuth>
                     </Route>
-                    <Route path="./">
+                    <Route path="/">
                         <CheckAuth auth>
                             <RevoltApp />
                         </CheckAuth>
