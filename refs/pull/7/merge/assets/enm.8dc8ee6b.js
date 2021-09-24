@@ -1,0 +1,2 @@
+const e={about:"About",tos:"Terms of Service",privacy:"Privacy Policy",image_by:"Image By",loading:"Loading…",on:"On",off:"Off",unavailable:"Unavailable",disabled:"Disabled"},a={title:"Login",register:"Register",username:"Username",password:"Password",invite:"Invite Code",email:"Email"};var i={general:e,login:a};export{i as default,e as general,a as login};
+//# sourceMappingURL=enm.8dc8ee6b.js.map

@@ -1,0 +1,2 @@
+var n="/* comic-neue-latin-400-italic*/\n@font-face {\n  font-family: 'Comic Neue';\n  font-style: italic;\n  font-display: swap;\n  font-weight: 400;\n  src: url('__VITE_ASSET__ac613a73__') format('woff2'), url('__VITE_ASSET__8e429587__') format('woff');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}\n";export{n as default};
+//# sourceMappingURL=400-italic.17224921.js.map
